@@ -1,0 +1,15 @@
+<h2>New Link</h2>
+
+<%= form_for(@link) do |f| %>
+	<p>
+		<%= f.label :URL %> <br />
+		<%= f.text_field :URL %>
+	</p>
+
+	<p>
+		<%= f.label :date_found %> <br />
+		<%= f.text_field :date_found %>
+	</p>
+	<%= f.submit %>
+	
+<% end  %>
