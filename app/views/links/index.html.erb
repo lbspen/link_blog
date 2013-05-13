@@ -1,5 +1,6 @@
 <%= link_to "New Link", new_link_path  %>
 <ul>
+	<% @links.sort! { |a,b| b.created_at <=> a.created_at } %>
 	<% @links.each do |link| %>
 		<li><%= link_to link.URL, link %></li>	
 	<% end %>

@@ -5,7 +5,8 @@ class LinksController < ApplicationController
 	end
 
 	def new
-		@link = Link.new
+		@link = Link.new(params[:link])
+		@link.save
 	end
 
 	def create
