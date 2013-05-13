@@ -1,6 +1,7 @@
 <h2>New Link</h2>
 
 <%= form_for(@link) do |f| %>
+	<%= f.error_messages %>
 	<p>
 		<%= f.label :URL %> <br />
 		<%= f.text_field :URL %>
